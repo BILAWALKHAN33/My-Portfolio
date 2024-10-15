@@ -45,6 +45,38 @@ tabs.forEach((tab) => {
   });
 });
 
+import React from 'react';
+
+const Certifications = () => {
+  const certifications = [
+    {
+      title: 'Certified MERN Stack Developer',
+      issuer: 'MERN Stack Academy',
+      thumbnail: 'path/to/certificate1.jpg',
+      link: 'https://example.com/certificate1'
+    },
+    {
+      // Add more certifications here
+    }
+  ];
+
+  return (
+    <section className="certifications">
+      {certifications.map((certification, index) => (
+        <div key={index} className="certification-card">
+          <img src={certification.thumbnail} alt={certification.title} className="certificate-thumbnail" />
+          <div className="certification-details">
+            <h3>{certification.title}</h3>
+            <p>{certification.issuer}</p>
+            <a href={certification.link} target="_blank">View Certificate</a>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default Certifications;
 // services box
 const boxViews = document.querySelectorAll(".services-box"),
   boxBtns = document.querySelectorAll(".services-button"),
