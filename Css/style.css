@@ -471,14 +471,15 @@ img {
 
 /* qualifi  */
 
+/* Base styles for qualification tabs */
 .qualification-tabs {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--margin-bottom-0-2);
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 10px;
-  background: linear-gradient(135deg, #ff4b5c, #ff8c00); /* gradient background */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* gradient from blue to light blue */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
 }
 
 .qualification-button {
@@ -486,9 +487,9 @@ img {
   font-weight: var(--font-medium);
   cursor: pointer;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 30px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -497,20 +498,27 @@ img {
 .qualification-button:hover {
   color: white;
   background: rgba(255, 255, 255, 0.3); /* lighter background on hover */
-  transform: scale(1.05); /* subtle scale effect on hover */
+  transform: scale(1.1); /* subtle scale effect on hover */
 }
 
+.qualification-button.qualification-active {
+  background: #5b0888; /* bold active background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* bold shadow on active */
+}
+
+/* Qualification icons */
 .qualification-icon {
   font-size: 1.25rem;
   margin-right: var(--margin-bottom-0-25);
-  color: #fff; /* icon color matches the button text */
-  transition: all 0.3s ease;
+  color: white; /* white icons for contrast */
+  transition: color 0.3s ease;
 }
 
 .qualification-button:hover .qualification-icon {
-  color: #ff8c00; /* change icon color on hover */
+  color: #ff8c00; /* icon color on hover */
 }
 
+/* Qualification content */
 .qualification-data {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
@@ -521,14 +529,14 @@ img {
 .qualification-title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  color: #333;
+  color: #333; /* dark title color for contrast */
 }
 
 .qualification-subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--margin-bottom-0-1);
-  color: #777; /* soft color for subtitle */
+  color: #777; /* soft color for subtitles */
 }
 
 .qualification-date {
@@ -536,23 +544,25 @@ img {
   color: var(--text-color-light);
 }
 
+/* Visual line and round indicator */
 .qualification-round {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: #ff4b5c; /* vibrant red */
+  background-color: #5b0888; /* bold purple round indicator */
   border-radius: 50%;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); /* slight shadow for emphasis */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* slight shadow for emphasis */
 }
 
 .qualification-line {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #ff4b5c; /* red line for visual connection */
+  background-color: #5b0888; /* matching purple line */
   transform: translate(6px, -7px);
 }
 
+/* Content visibility */
 .qualification [data-content] {
   display: none;
 }
@@ -561,11 +571,13 @@ img {
   display: block;
 }
 
+/* Hover and active styles for the button */
 .qualification-button.qualification-active {
   color: #fff;
-  background: #5b0888; /* active button color with bold background */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* bold shadow for active state */
+  background: #5b0888; /* active button with bold color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* enhanced shadow for active state */
 }
+
 
 /* services  */
 .services-container {
