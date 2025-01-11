@@ -476,67 +476,39 @@ img {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--margin-bottom-0-2);
-  padding: 1rem 0;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #007bff, #00c6ff); /* gradient from blue to light blue */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
 }
 
 .qualification-button {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 30px;
-  transition: all 0.3s ease-in-out;
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: hsl(var(--hue-color), 8%, 45%);
 }
 
 .qualification-button:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.3); /* lighter background on hover */
-  transform: scale(1.1); /* subtle scale effect on hover */
+  color: var(--first-color);
 }
 
-.qualification-button.qualification-active {
-  background: #5b0888; /* bold active background */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* bold shadow on active */
-}
-
-/* Qualification icons */
 .qualification-icon {
   font-size: 1.25rem;
   margin-right: var(--margin-bottom-0-25);
-  color: white; /* white icons for contrast */
-  transition: color 0.3s ease;
 }
 
-.qualification-button:hover .qualification-icon {
-  color: #ff8c00; /* icon color on hover */
-}
-
-/* Qualification content */
 .qualification-data {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
-  padding: 1rem 0;
 }
 
 .qualification-title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  color: #333; /* dark title color for contrast */
 }
 
 .qualification-subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--margin-bottom-0-1);
-  color: #777; /* soft color for subtitles */
 }
 
 .qualification-date {
@@ -544,25 +516,22 @@ img {
   color: var(--text-color-light);
 }
 
-/* Visual line and round indicator */
 .qualification-round {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: #5b0888; /* bold purple round indicator */
+  background-color: var(--first-color);
   border-radius: 50%;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* slight shadow for emphasis */
 }
 
 .qualification-line {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #5b0888; /* matching purple line */
+  background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
 
-/* Content visibility */
 .qualification [data-content] {
   display: none;
 }
@@ -571,11 +540,8 @@ img {
   display: block;
 }
 
-/* Hover and active styles for the button */
 .qualification-button.qualification-active {
-  color: #fff;
-  background: #5b0888; /* active button with bold color */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* enhanced shadow for active state */
+  color: #5b0888;
 }
 
 
