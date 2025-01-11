@@ -444,8 +444,8 @@ img {
   margin-bottom: 1rem;
   margin-right: 1rem;
   font-size: var(--small-font-size);
-  background: #007bff; /* vibrant blue */
-  background: linear-gradient(45deg, #007bff, #00c6ff); /* gradient from blue to light blue */
+  background: #007bff; /* slate blue */
+  background: linear-gradient(45deg, #007bff, #00c6ff); /* gradient from slate blue to blue */
   border-radius: 50px; /* pill shape for smooth edges */
   font-weight: bold;
   color: white; /* white text for contrast */
