@@ -482,11 +482,20 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
-  color: hsl(var(--hue-color), 8%, 45%);
+  color: #fff;
+  background-color: #7700ff; /* Initial purple */
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .qualification-button:hover {
-  color: var(--first-color);
+  background-color: #5a00cc; /* Darker purple on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.qualification-button.qualification-active {
+  background-color: #002aff; /* Blue for active state */
 }
 
 .qualification-icon {
@@ -503,24 +512,36 @@ img {
 .qualification-title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  background-color: #7700ff; /* Purple background for title */
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .qualification-subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--margin-bottom-0-1);
+  background-color: #6600cc; /* Darker purple for subtitle */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .qualification-date {
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: #fff;
+  background-color: #0033cc; /* Blue background for date */
+  padding: 4px 8px;
+  border-radius: 10px;
 }
 
 .qualification-round {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--first-color);
+  background-color: #7700ff; /* Purple for the round indicator */
   border-radius: 50%;
 }
 
@@ -528,7 +549,7 @@ img {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--first-color);
+  background-color: #002aff; /* Blue for the line */
   transform: translate(6px, -7px);
 }
 
@@ -541,8 +562,9 @@ img {
 }
 
 .qualification-button.qualification-active {
-  color: #5b0888;
+  background-color: #002aff; /* Blue for the active state */
 }
+
 
 
 /* services  */
