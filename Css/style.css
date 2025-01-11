@@ -444,15 +444,18 @@ img {
   margin-bottom: 1rem;
   margin-right: 1rem;
   font-size: var(--small-font-size);
-  background: var(--first-color-lighter);
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* gradient background */
   border-radius: 5px;
   font-weight: 600;
-  color: var(--title-color);
+  color: #fff; /* white text for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow effect */
   transition: 0.3s ease;
 }
 
 .skills-name:hover {
-  background-color: var(--first-color-alt);
+  background: linear-gradient(45deg, #feb47b, #ff7e5f); /* reverse gradient on hover */
+  transform: translateY(-5px); /* lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* deeper shadow on hover */
 }
 
 /* qualifi  */
