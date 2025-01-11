@@ -444,8 +444,8 @@ img {
   margin-bottom: 1rem;
   margin-right: 1rem;
   font-size: var(--small-font-size);
-  background: #ff4b5c; /* vibrant red */
-  background: linear-gradient(45deg, #ff4b5c, #007bff); /* gradient from red to blue */
+  background: #007bff; /* vibrant blue */
+  background: linear-gradient(45deg, #007bff, #00c6ff); /* gradient from blue to light blue */
   border-radius: 50px; /* pill shape for smooth edges */
   font-weight: bold;
   color: white; /* white text for contrast */
@@ -457,7 +457,7 @@ img {
 }
 
 .skills-name:hover {
-  background: linear-gradient(45deg, #ff8c00, #ff4b5c); /* reverse gradient on hover */
+  background: linear-gradient(45deg, #00c6ff, #007bff); /* reverse gradient on hover */
   transform: scale(1.1); /* slightly enlarge on hover */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* more prominent shadow on hover */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* glowing text effect on hover */
