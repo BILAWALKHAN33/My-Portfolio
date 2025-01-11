@@ -567,7 +567,7 @@ img {
 
 
 
-/* services  */
+/* services */
 .services-container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -575,21 +575,22 @@ img {
 
 .services-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: #7700ff; /* Purple background */
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
 }
 
 .services-content:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slight scale effect */
 }
 
 .services-icon {
   display: block;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: #fff; /* White icon */
   margin-bottom: var(--margin-bottom-0-1);
 }
 
@@ -597,11 +598,21 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--margin-bottom-0-1);
   font-weight: var(--font-medium);
+  color: #fff; /* White title text */
 }
 
 .services-button {
   cursor: pointer;
   font-size: var(--small-font-size);
+  background-color: #6600cc; /* Darker purple for button */
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.services-button:hover {
+  background-color: #5a00cc; /* Darker purple on hover */
 }
 
 .services-button:hover .button-icon {
@@ -627,9 +638,10 @@ img {
 
 .services-box-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: #002aff; /* Blue background */
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .services-box-services {
@@ -644,6 +656,7 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--margin-bottom-0-1-5);
+  color: #fff; /* White title text */
 }
 
 .services-box-close {
@@ -651,12 +664,12 @@ img {
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: #fff; /* White close icon */
   cursor: pointer;
 }
 
 .services-list-icon {
-  color: var(--first-color);
+  color: #fff; /* White icon */
   margin-top: 0.25rem;
   margin-right: var(--margin-bottom-0-25);
 }
@@ -665,6 +678,7 @@ img {
   opacity: 1;
   visibility: visible;
 }
+
 
 /* projects  */
 .portfolio-container {
