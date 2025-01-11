@@ -440,22 +440,33 @@ img {
 }
 
 .skills-name {
-  padding: 0.8rem 1.25rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
   font-size: var(--small-font-size);
-  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* gradient background */
-  border-radius: 5px;
-  font-weight: 600;
-  color: #fff; /* white text for contrast */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow effect */
-  transition: 0.3s ease;
+  background: #6a11cb; /* vibrant purple */
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* gradient from purple to blue */
+  border-radius: 50px; /* pill shape for smooth edges */
+  font-weight: bold;
+  color: white; /* white text for contrast */
+  text-transform: uppercase; /* capitalize letters for a bold look */
+  letter-spacing: 1px; /* adds spacing between letters */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* pointer cursor to indicate interactivity */
 }
 
 .skills-name:hover {
-  background: linear-gradient(45deg, #feb47b, #ff7e5f); /* reverse gradient on hover */
-  transform: translateY(-5px); /* lift effect on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* deeper shadow on hover */
+  background: linear-gradient(45deg, #2575fc, #6a11cb); /* reverse gradient on hover */
+  transform: scale(1.1); /* slightly enlarge on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* more prominent shadow on hover */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* glowing text effect on hover */
+  letter-spacing: 2px; /* slightly increase letter-spacing on hover */
+}
+
+.skills-name:active {
+  transform: scale(0.98); /* scale down when clicked */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* smaller shadow on click */
 }
 
 /* qualifi  */
