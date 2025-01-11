@@ -445,7 +445,7 @@ img {
   margin-right: 1rem;
   font-size: var(--small-font-size);
   background: #ff4b5c; /* vibrant red */
-  background: linear-gradient(45deg, #ff4b5c, #ff8c00); /* gradient from red to orange */
+  background: linear-gradient(45deg, #ff4b5c, #007bff); /* gradient from red to blue */
   border-radius: 50px; /* pill shape for smooth edges */
   font-weight: bold;
   color: white; /* white text for contrast */
